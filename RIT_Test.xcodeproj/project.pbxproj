@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B35B9F4F0CC144BCF527D21 /* Pods_RIT_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B44C28E34584B67A54F0FF7 /* Pods_RIT_Test.framework */; };
 		B7B5CFD71F178FE400154103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B5CFD61F178FE400154103 /* AppDelegate.swift */; };
-		B7B5CFD91F178FE400154103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B5CFD81F178FE400154103 /* ViewController.swift */; };
+		B7B5CFD91F178FE400154103 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B5CFD81F178FE400154103 /* LoginViewController.swift */; };
 		B7B5CFDC1F178FE500154103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B5CFDA1F178FE500154103 /* Main.storyboard */; };
 		B7B5CFDF1F178FE600154103 /* RIT_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7B5CFDD1F178FE600154103 /* RIT_Test.xcdatamodeld */; };
 		B7B5CFE11F178FE700154103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B5CFE01F178FE700154103 /* Assets.xcassets */; };
 		B7B5CFE41F178FE700154103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B5CFE21F178FE700154103 /* LaunchScreen.storyboard */; };
+		FA0C6E2F1F180FAD00685FFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA0C6E2E1F180FAD00685FFA /* GoogleService-Info.plist */; };
+		FA2F0B781F1B7EDA00C14399 /* BookNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F0B771F1B7EDA00C14399 /* BookNet.swift */; };
+		FA2F0B7B1F1B9EC000C14399 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F0B7A1F1B9EC000C14399 /* BookTableViewCell.swift */; };
+		FA2F0B7D1F1BB22600C14399 /* DetailBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F0B7C1F1BB22600C14399 /* DetailBookTableViewController.swift */; };
+		FA2F0B7F1F1BBA1300C14399 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F0B7E1F1BBA1300C14399 /* ImageTableViewCell.swift */; };
+		FA2F0B811F1BBA4000C14399 /* AuthorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F0B801F1BBA4000C14399 /* AuthorsTableViewCell.swift */; };
+		FA2F0B831F1BBA5800C14399 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F0B821F1BBA5800C14399 /* DescriptionTableViewCell.swift */; };
+		FA2F0BC71F1BDF0800C14399 /* ShopCatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F0BC61F1BDF0800C14399 /* ShopCatTableViewController.swift */; };
+		FA2F0BC91F1BE9E500C14399 /* DetailShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F0BC81F1BE9E500C14399 /* DetailShopTableViewController.swift */; };
+		FA85D5F61F18DDCD0005D595 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85D5F51F18DDCD0005D595 /* Constant.swift */; };
+		FA85D5FD1F18E49F0005D595 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85D5FC1F18E49F0005D595 /* ProfileTableViewController.swift */; };
+		FA85D6021F192EC70005D595 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85D6011F192EC60005D595 /* BookTableViewController.swift */; };
+		FA85D6051F1932B40005D595 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85D6041F1932B40005D595 /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111A7F878A4B6E10C2346D93 /* Pods-RIT_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIT_Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RIT_Test/Pods-RIT_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		26AACEF2004FDB2A6B924275 /* Pods-RIT_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIT_Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-RIT_Test/Pods-RIT_Test.release.xcconfig"; sourceTree = "<group>"; };
+		6B44C28E34584B67A54F0FF7 /* Pods_RIT_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RIT_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B5CFD31F178FE300154103 /* RIT_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIT_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B5CFD61F178FE400154103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7B5CFD81F178FE400154103 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7B5CFD81F178FE400154103 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7B5CFDB1F178FE500154103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7B5CFDE1F178FE600154103 /* RIT_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RIT_Test.xcdatamodel; sourceTree = "<group>"; };
 		B7B5CFE01F178FE700154103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7B5CFE31F178FE700154103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7B5CFE51F178FE700154103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0C6E2E1F180FAD00685FFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA2F0B771F1B7EDA00C14399 /* BookNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNet.swift; sourceTree = "<group>"; };
+		FA2F0B7A1F1B9EC000C14399 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		FA2F0B7C1F1BB22600C14399 /* DetailBookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBookTableViewController.swift; sourceTree = "<group>"; };
+		FA2F0B7E1F1BBA1300C14399 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		FA2F0B801F1BBA4000C14399 /* AuthorsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorsTableViewCell.swift; sourceTree = "<group>"; };
+		FA2F0B821F1BBA5800C14399 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		FA2F0BC61F1BDF0800C14399 /* ShopCatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCatTableViewController.swift; sourceTree = "<group>"; };
+		FA2F0BC81F1BE9E500C14399 /* DetailShopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailShopTableViewController.swift; sourceTree = "<group>"; };
+		FA85D5F51F18DDCD0005D595 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FA85D5FC1F18E49F0005D595 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		FA85D6011F192EC60005D595 /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		FA85D6041F1932B40005D595 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B35B9F4F0CC144BCF527D21 /* Pods_RIT_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50D34AC979536D763C3466D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B44C28E34584B67A54F0FF7 /* Pods_RIT_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7B5CFCA1F178FE200154103 = {
 			isa = PBXGroup;
 			children = (
 				B7B5CFD51F178FE300154103 /* RIT_Test */,
 				B7B5CFD41F178FE300154103 /* Products */,
+				D32811CBCB9193A2AEEBA1FC /* Pods */,
+				50D34AC979536D763C3466D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +97,117 @@
 		B7B5CFD51F178FE300154103 /* RIT_Test */ = {
 			isa = PBXGroup;
 			children = (
-				B7B5CFD61F178FE400154103 /* AppDelegate.swift */,
-				B7B5CFD81F178FE400154103 /* ViewController.swift */,
-				B7B5CFDA1F178FE500154103 /* Main.storyboard */,
-				B7B5CFE01F178FE700154103 /* Assets.xcassets */,
-				B7B5CFE21F178FE700154103 /* LaunchScreen.storyboard */,
-				B7B5CFE51F178FE700154103 /* Info.plist */,
+				FA85D6031F19326D0005D595 /* Network */,
+				FA85D5F21F18D88D0005D595 /* Controlers */,
+				FA85D5F41F18D8CA0005D595 /* Storyboard */,
+				FA85D5F31F18D8A80005D595 /* Support Files */,
 				B7B5CFDD1F178FE600154103 /* RIT_Test.xcdatamodeld */,
 			);
 			path = RIT_Test;
+			sourceTree = "<group>";
+		};
+		D32811CBCB9193A2AEEBA1FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				111A7F878A4B6E10C2346D93 /* Pods-RIT_Test.debug.xcconfig */,
+				26AACEF2004FDB2A6B924275 /* Pods-RIT_Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA2F0B761F1B7EAB00C14399 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F0B771F1B7EDA00C14399 /* BookNet.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA2F0B791F1B9E9700C14399 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F0B7A1F1B9EC000C14399 /* BookTableViewCell.swift */,
+				FA2F0B7E1F1BBA1300C14399 /* ImageTableViewCell.swift */,
+				FA2F0B801F1BBA4000C14399 /* AuthorsTableViewCell.swift */,
+				FA2F0B821F1BBA5800C14399 /* DescriptionTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		FA2F0BC31F1BDE5100C14399 /* ShopCat */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F0BC61F1BDF0800C14399 /* ShopCatTableViewController.swift */,
+				FA2F0BC81F1BE9E500C14399 /* DetailShopTableViewController.swift */,
+			);
+			name = ShopCat;
+			sourceTree = "<group>";
+		};
+		FA85D5F21F18D88D0005D595 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				FA85D5FE1F192E350005D595 /* Login */,
+				FA85D5FF1F192E430005D595 /* Profile */,
+				FA85D6001F192E4C0005D595 /* Book */,
+				FA2F0BC31F1BDE5100C14399 /* ShopCat */,
+			);
+			name = Controlers;
+			sourceTree = "<group>";
+		};
+		FA85D5F31F18D8A80005D595 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7B5CFD61F178FE400154103 /* AppDelegate.swift */,
+				B7B5CFE01F178FE700154103 /* Assets.xcassets */,
+				B7B5CFE51F178FE700154103 /* Info.plist */,
+				FA0C6E2E1F180FAD00685FFA /* GoogleService-Info.plist */,
+				FA85D5F51F18DDCD0005D595 /* Constant.swift */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		FA85D5F41F18D8CA0005D595 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B7B5CFDA1F178FE500154103 /* Main.storyboard */,
+				B7B5CFE21F178FE700154103 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA85D5FE1F192E350005D595 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B7B5CFD81F178FE400154103 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		FA85D5FF1F192E430005D595 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FA85D5FC1F18E49F0005D595 /* ProfileTableViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		FA85D6001F192E4C0005D595 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F0B791F1B9E9700C14399 /* Cell */,
+				FA85D6011F192EC60005D595 /* BookTableViewController.swift */,
+				FA2F0B7C1F1BB22600C14399 /* DetailBookTableViewController.swift */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		FA85D6031F19326D0005D595 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F0B761F1B7EAB00C14399 /* Model */,
+				FA85D6041F1932B40005D595 /* Networking.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7B5CFE81F178FE700154103 /* Build configuration list for PBXNativeTarget "RIT_Test" */;
 			buildPhases = (
+				B26838C9CEBF3596D95A7E63 /* [CP] Check Pods Manifest.lock */,
 				B7B5CFCF1F178FE300154103 /* Sources */,
 				B7B5CFD01F178FE300154103 /* Frameworks */,
 				B7B5CFD11F178FE300154103 /* Resources */,
+				8E0164DC180E465F228D9E19 /* [CP] Embed Pods Frameworks */,
+				2F5C18672181CFE17C5AC905 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +246,7 @@
 					B7B5CFD21F178FE300154103 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = BMWYKNJ2K6;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -128,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7B5CFE41F178FE700154103 /* LaunchScreen.storyboard in Resources */,
+				FA0C6E2F1F180FAD00685FFA /* GoogleService-Info.plist in Resources */,
 				B7B5CFE11F178FE700154103 /* Assets.xcassets in Resources */,
 				B7B5CFDC1F178FE500154103 /* Main.storyboard in Resources */,
 			);
@@ -135,14 +283,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F5C18672181CFE17C5AC905 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RIT_Test/Pods-RIT_Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E0164DC180E465F228D9E19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RIT_Test/Pods-RIT_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B26838C9CEBF3596D95A7E63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B7B5CFCF1F178FE300154103 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B7B5CFDF1F178FE600154103 /* RIT_Test.xcdatamodeld in Sources */,
-				B7B5CFD91F178FE400154103 /* ViewController.swift in Sources */,
+				FA2F0B7D1F1BB22600C14399 /* DetailBookTableViewController.swift in Sources */,
+				FA2F0BC91F1BE9E500C14399 /* DetailShopTableViewController.swift in Sources */,
+				FA85D5FD1F18E49F0005D595 /* ProfileTableViewController.swift in Sources */,
+				FA2F0B7F1F1BBA1300C14399 /* ImageTableViewCell.swift in Sources */,
+				FA2F0B781F1B7EDA00C14399 /* BookNet.swift in Sources */,
+				B7B5CFD91F178FE400154103 /* LoginViewController.swift in Sources */,
+				FA2F0B811F1BBA4000C14399 /* AuthorsTableViewCell.swift in Sources */,
+				FA2F0B831F1BBA5800C14399 /* DescriptionTableViewCell.swift in Sources */,
+				FA2F0BC71F1BDF0800C14399 /* ShopCatTableViewController.swift in Sources */,
+				FA2F0B7B1F1B9EC000C14399 /* BookTableViewCell.swift in Sources */,
 				B7B5CFD71F178FE400154103 /* AppDelegate.swift in Sources */,
+				FA85D6021F192EC70005D595 /* BookTableViewController.swift in Sources */,
+				FA85D5F61F18DDCD0005D595 /* Constant.swift in Sources */,
+				FA85D6051F1932B40005D595 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,26 +471,35 @@
 		};
 		B7B5CFE91F178FE700154103 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111A7F878A4B6E10C2346D93 /* Pods-RIT_Test.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BMWYKNJ2K6;
 				INFOPLIST_FILE = RIT_Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "alexander.rudyk.RIT-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B7B5CFEA1F178FE700154103 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AACEF2004FDB2A6B924275 /* Pods-RIT_Test.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BMWYKNJ2K6;
 				INFOPLIST_FILE = RIT_Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "alexander.rudyk.RIT-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +523,7 @@
 				B7B5CFEA1F178FE700154103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

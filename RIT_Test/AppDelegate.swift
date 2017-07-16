@@ -8,18 +8,76 @@
 
 import UIKit
 import CoreData
+import FBSDKCoreKit
+import Google
+import GoogleSignIn
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        // Initialize sign-in
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
+        
+        GIDSignIn.sharedInstance().delegate = self
+        
+        if ((GIDSignIn.sharedInstance().hasAuthInKeychain()) && (FBSDKAccessToken.current() != nil)) {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            if let tabBarVC = sb.instantiateViewController(withIdentifier: "MainTabBarVC") as? UITabBarController {
+                window?.rootViewController = tabBarVC
+            }
+        }
+        
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let sourceApplication: String? = options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String
+        return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: sourceApplication, annotation: nil) ||
+            GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: nil)
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if (error == nil) {
+            // Perform any operations on signed in user here.
+            let userId = user.userID                  // For client-side use only!
+            let idToken = user.authentication.idToken // Safe to send to the server
+            let fullName = user.profile.name
+            let givenName = user.profile.givenName
+            let familyName = user.profile.familyName
+            let email = user.profile.email
+            let hasImage = user.profile.hasImage
+            let imageURL: URL = user.profile.imageURL(withDimension: 150)
+            
+            let defaults = UserDefaults.standard
+            
+            defaults.set(userId, forKey: Constant.User.userID)
+            defaults.set(idToken, forKey: Constant.User.idToken)
+            defaults.set(fullName, forKey: Constant.User.fullName)
+            defaults.set(givenName, forKey: Constant.User.givenName)
+            defaults.set(familyName, forKey: Constant.User.familyName)
+            defaults.set(email, forKey: Constant.User.email)
+            defaults.set(hasImage, forKey: Constant.User.hasImage)
+            defaults.set(imageURL, forKey: Constant.User.imageURL)
+            
+            defaults.synchronize()
+            
+            print("User ID: \(String(describing: userId)) \n Token: \(String(describing: idToken)) \n Full Name: \(String(describing: fullName)) \n Given Name: \(String(describing: givenName)) \n Family Name: \(String(describing: familyName)) \n Email: \(String(describing: email)) \n URL: \(String(describing: imageURL))")
+            
+            NotificationCenter.default.post(name: Constant.googleLoginNotification, object: nil)
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
