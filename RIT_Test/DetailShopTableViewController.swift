@@ -24,7 +24,7 @@ class DetailShopTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        if book?.descriptionBookCD == "" {
+        if book?.descriptionBookCD == "" || if book?.descriptionBookCD == nil {
             return 1
         }
         return 2
@@ -33,7 +33,7 @@ class DetailShopTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            if book?.authorBookCD != "" {
+            if book?.authorBookCD != "" || if book?.authorBookCD != nil{
                 return 2
             }
             return 1
